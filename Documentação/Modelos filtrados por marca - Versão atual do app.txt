@@ -1,0 +1,179 @@
+cherry:
+	celer
+	QQ
+
+Chevrolet:
+    Agile
+    Astra
+    Blazer
+    Captiva
+    Celta
+    Classic
+    Cobalt
+    Corsa
+    Cruze
+    Malibu
+    Meriva
+    Montana
+    Omega
+    Onix
+    Prisma
+    S10
+    Sonic
+    Trailblazer
+    Vectra
+    Zafira
+	
+Citroën:
+    Aircross
+    C3
+    C4
+    C5
+    Jumper
+    Xsara Picasso
+	
+Fiat:
+    500
+    Bravo
+    Doblò
+    Ducato
+    Fiat Mobi
+    Fiat Toro
+    Fiorino
+    Freemont
+    Grand Siena
+    Idea
+    Linea
+    Mille
+    Palio
+    Punto
+    Siena EL
+    Strada
+    Uno
+	
+Ford:
+    Courier
+    EcoSport
+    Edge
+    F-250
+    Fiesta Rocam
+    Focus
+    Fusion
+    Ka
+    New Fiesta
+    Ranger
+
+Honda:
+    Accord
+    CR-V
+    City
+    Civic
+    Fit
+    HR-V
+	
+Hyundai:
+    Azera
+    Elantra
+    Equus
+    HB20
+    HR
+    Santa Fe
+    Sonata
+    Tucson
+    Veloster
+    Veracruz
+    i30
+    iX35
+
+Jac Motors:
+    J2
+    J3
+    J5
+    J6
+
+Jeep:
+    Cherokee
+    Compass
+    Grand Cherokee
+    Jeep Renegade
+    Wrangler
+	
+Kia:
+    Carnival
+    Cerato
+    Optima
+    Picanto
+    Sorento
+	Soul
+    Sportage
+	
+Land Rover:
+    Defender
+    Discovery
+    Freelander
+    Range Rover
+
+Mitsubishi:
+    ASX
+    L200
+    Lancer
+    Outlander
+    Pajero
+	
+Nissan:
+    Frontier
+    Grand Livina
+    Livina
+    March
+    Sentra
+    Tiida
+    Versa
+	
+Peugeot:
+    2008
+    207
+    208
+    3008
+    307
+    308
+    408
+
+Renault:
+    Clio
+    Duster
+    Fluence
+    Kangoo Express
+    Logan
+    Sandero
+    Symbol
+	
+Ssangyong:
+    Actyon Sports
+    Kyron
+	
+Toyota:
+    Corolla
+    Etios 
+    Hilux
+    Prius
+    RAV4
+    SW4
+
+Volkswagen:
+    Amarok
+    Crossfox
+    Fox
+    Fusca
+    Gol
+    Golf
+    Jetta
+    Kombi
+    Parati
+    Passat
+    Polo
+    Saveiro
+    Space Cross
+    SpaceFox
+    Tiguan
+    Up!
+    Voyage

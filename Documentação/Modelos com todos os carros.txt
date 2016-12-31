@@ -1,0 +1,294 @@
+Audi
+
+	A1
+	A3
+	A3 Sedan
+	A4
+	A4 Avant
+	A5
+	A7
+	A8
+	Q3
+	Q5
+	Q7
+	R8
+	R8 GT
+	RS 3 Sportback
+	RS 5
+	RS6 Avant
+	TT Coupé
+	TT Roadster
+
+Chery
+	
+	Celer Hatch
+	Celer Sedan
+	Cielo Hatch
+	Cielo Sedan
+	Face
+	QQ
+	S-18
+	Tiggo
+
+GM/Chevrolet
+
+	Agile
+	Astra Hatch
+	Astra Sedan
+	Blazer
+	Camaro
+	Captiva
+	Celta
+	Classic
+	Cobalt
+	Corsa Hatch
+	Corsa Sedã
+	Cruze
+	Cruze Sport6
+	Malibu
+	Meriva
+	Montana
+	Omega
+	Onix
+	Prisma
+	S10
+	Sonic
+	Spin
+	Tracker
+	Trailblazer
+	Vectra
+	Vectra GT
+	Zafira
+
+Citroën
+	
+	Aircross
+	C3
+	C3 Picasso
+	C4
+	C4 Lounge
+	C4 Pallas
+	C4 Picasso
+	C5
+	C5 Tourer
+	DS3
+	DS5
+	Jumper
+	Xsara Picasso
+
+Fiat
+
+	500
+	500 Abarth
+	Bravo
+	Doblò
+	Doblò Cargo
+	Ducato
+	Fiat Mobi
+	Fiat Toro
+	Fiorino
+	Freemont
+	Grand Siena
+	Idea
+	Linea
+	Mille
+	Palio
+	Palio Adventure
+	Palio Weekend
+	Punto
+	Siena EL
+	Strada
+	Uno
+
+Ford
+
+	Courier
+	EcoSport
+	Edge
+	F-250
+	Fiesta Rocam Hatch
+	Fiesta Rocam Sedan
+	Focus Fastback
+	Focus Hatch
+	Fusion
+	Ka
+	Ka+
+	New Fiesta
+	New Fiesta Hatch
+	Ranger
+	Transit
+
+Honda
+
+	Accord
+	CR-V
+	City
+	Civic
+	Civic Si
+	Fit
+	HR-V
+
+Hyundai
+	
+	Azera
+	Elantra
+	Equus
+	HB20
+	HB20S
+	HB20X
+	HR
+	Santa Fe
+	Sonata
+	Tucson
+	Veloster
+	Veracruz
+	i30
+	i30 CW
+	iX35
+
+Jac Motors
+
+	J2
+	J3
+	J3 Turin
+	J5
+	J6
+	T5
+	T6
+
+Jeep
+
+	Cherokee
+	Compass
+	Grand Cherokee
+	Jeep Renegade
+	Wrangler
+
+Kia
+
+	Bongo
+	Cadenza
+	Carens
+	Carnival
+	Cerato
+	Mohave
+	Optima
+	Picanto
+	Sorento
+	Soul
+	Sportage
+	
+Land Rover
+	
+	Defender
+	Discovery 4
+	Discovery Sport
+	Freelander 2
+	Range Rover Evoque
+	Range Rover Sport
+	Range Rover Vogue
+
+Mitsubishi
+	
+	ASX
+	L200 Outdoor
+	L200 Savana
+	L200 Triton
+	Lancer
+	Lancer Evolution X
+	Outlander
+	Pajero Dakar
+	Pajero Full
+	Pajero Sport
+	Pajero TR4
+
+
+Nissan
+	
+	Altima
+	Frontier
+	Grand Livina
+	Kicks
+	Livina
+	March
+	Sentra
+	Tiida Hatch
+	Tiida Sedan
+	Versa
+	
+Peugeot
+
+	2008
+	207
+	207 SW
+	207 Sedan
+	208
+	3008
+	307
+	308
+	308 CC
+	408
+	508
+	Boxer
+	Hoggar
+	Partner
+	RCZ
+
+Renault
+
+	Alaskan
+	Clio
+	Duster
+	Fluence
+	Grand Tour
+	Kangoo Express
+	Logan
+	Master
+	Oroch
+	Sandero
+	Sandero RS
+	Sandero Stepway
+	Symbol
+	
+Ssangyong
+
+	Actyon Sports
+	Korando
+	Kyron
+
+Toyota
+
+	Camry
+	Corolla
+	Etios Hatch
+	Etios Sedã
+	Hilux
+	Prius
+	RAV4
+	SW4
+
+Volkswagen
+
+	Amarok
+	Crossfox
+	Fox
+	Fusca
+	Gol
+	Gol G4
+	Golf
+	Golf Variant
+	Jetta
+	Jetta Variant
+	Kombi
+	Parati
+	Passat
+	Passat Variant
+	Polo
+	Polo Sedan
+	Saveiro
+	Space Cross
+	SpaceFox
+	Tiguan
+	Touareg
+	Up!
+	Voyage

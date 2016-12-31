@@ -1,0 +1,67 @@
+﻿Cores
+
+	Amarelo	
+	Azul	
+Branco	
+Cinza	
+	Laranja	
+	Marrom	
+Prata	
+Preto	
+	Rosa	
+	Roxo	
+Verde	
+Vermelho	
+Vinho
+
+Marcas
+ 
+	Agrale
+	Aston Martin
+Audi
+	Bentley
+	BMW
+	Changan
+Chery
+GM/Chevrolet
+	Chrysler
+Citroën
+	Dodge
+	Effa
+	Ferrari
+Fiat
+Ford
+	Geely
+	Hafei
+Honda
+Hyundai
+	Iveco
+Jac Motors
+	Jaguar
+Jeep
+	Jinbei
+Kia
+	Lamborghini
+Land Rover
+	Lexus
+	Lifan
+	Mahindra
+	Maserati
+	Mercedes-Benz
+	MG Motors
+	Mini
+Mitsubishi
+Nissan
+Peugeot
+	Porsche
+	Ram
+Renault
+	Smart
+Ssangyong
+	Subaru
+	Suzuki
+	Tesla
+Toyota
+	Troller
+Volkswagen
+	Volvo
