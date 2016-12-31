@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="array_marcas">
+
+        <item>Audi</item>
+        <item>Chery</item>
+        <item>GM/Chevrolet</item>
+        <item>Citroën</item>
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Jac Motors</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Land Rover</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Peugeot</item>
+        <item>Renault</item>
+        <item>Ssangyong</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+
+    </array>
+
+</resources>

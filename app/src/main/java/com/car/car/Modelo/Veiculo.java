@@ -7,25 +7,31 @@ import java.util.List;
  */
 public class Veiculo {
     private Long id;
+    private String marca;
+    private String modelo;
     private String placa;
-    private String descrisao;
+    private Long km;
     private Cliente cliente;
     private List<Servico> servicos;
 
     public Veiculo() {
     }
 
-    public Veiculo(String placa, String descrisao, Cliente cliente, List<Servico> servicos) {
+    public Veiculo(String marca, String modelo, String placa, Long km, Cliente cliente, List<Servico> servicos) {
+        this.marca = marca;
+        this.modelo = modelo;
         this.placa = placa;
-        this.descrisao = descrisao;
+        this.km = km;
         this.cliente = cliente;
         this.servicos = servicos;
     }
 
-    public Veiculo(Long id, String placa, String descrisao, Cliente cliente, List<Servico> servicos) {
+    public Veiculo(Long id, String marca, String modelo, String placa, Long km, Cliente cliente, List<Servico> servicos) {
         this.id = id;
+        this.marca = marca;
+        this.modelo = modelo;
         this.placa = placa;
-        this.descrisao = descrisao;
+        this.km = km;
         this.cliente = cliente;
         this.servicos = servicos;
     }
@@ -38,6 +44,22 @@ public class Veiculo {
         this.id = id;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
     public String getPlaca() {
         return placa;
     }
@@ -46,12 +68,12 @@ public class Veiculo {
         this.placa = placa;
     }
 
-    public String getDescrisao() {
-        return descrisao;
+    public Long getKm() {
+        return km;
     }
 
-    public void setDescrisao(String descrisao) {
-        this.descrisao = descrisao;
+    public void setKm(Long km) {
+        this.km = km;
     }
 
     public Cliente getCliente() {

@@ -3,11 +3,12 @@ package com.car.car.DataBase;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class DbHelper extends SQLiteOpenHelper {
 	
     private final static String DATABASE_NAME = "CitCar";
-    private final static int DATABASE_VERSION = 6;
+    private final static int DATABASE_VERSION = 1;
     private static DbHelper ourInstance = null;
 
     private DbHelper(Context context) {
@@ -19,9 +20,8 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     public static void newInstance(Context context) {
-        if (ourInstance == null) {
-            ourInstance = new DbHelper(context.getApplicationContext());
-        }
+        if (ourInstance == null) ourInstance = new DbHelper(context.getApplicationContext());
+
     }
 
     @Override
@@ -56,14 +56,17 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     public void createTableVeiculo(SQLiteDatabase db){
-        String sql = "CREATE TABLE IF NOT EXISTS Veiculo\n" +
+        String sql = "CREATE TABLE Veiculo\n" +
                 "(\n" +
                 "\tid            INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
+                "\tmarca         VARCHAR(100) NOT NULL,\n" +
+                "\tmodelo        VARCHAR(100) NOT NULL,\n" +
                 "\tplaca         VARCHAR(8) NOT NULL,\n" +
-                "\tdescrisao     VARCHAR(100) NOT NULL,\n" +
+                "\tkm            INTEGER NOT NULL,\n" +
                 "\tidCliente     INTEGER NOT NULL\n" +
                 ")\n";
         db.execSQL(sql);
+        Log.d("Entrou", "Criou a tabela");
     }
 
     public void createTableServico(SQLiteDatabase db) {

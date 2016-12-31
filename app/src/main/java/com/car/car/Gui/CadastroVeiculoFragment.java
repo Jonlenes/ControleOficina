@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.car.car.Modelo.Cliente;
 import com.car.car.Modelo.ClienteDao;
@@ -35,8 +36,10 @@ import br.com.jansenfelipe.androidmask.MaskEditTextChangedListener;
  */
 public class CadastroVeiculoFragment extends Fragment {
 
+    private AutoCompleteTextView actMarca;
+    private AutoCompleteTextView actModelo;
     private EditText edtPlaca;
-    private EditText edtVeiculo;
+    private EditText edtKm;
     private AutoCompleteTextView actNome;
     private EditText edtCpf;
     private EditText edtTelefone;
@@ -61,8 +64,10 @@ public class CadastroVeiculoFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_cadastro_veiculo, container, false);
 
+        actMarca = (AutoCompleteTextView) rootView.findViewById(R.id.actMarca);
+        actModelo = (AutoCompleteTextView) rootView.findViewById(R.id.actModelo);
         edtPlaca = (EditText) rootView.findViewById(R.id.edtPlaca);
-        edtVeiculo = (EditText) rootView.findViewById(R.id.edtVeiculo);;
+        edtKm = (EditText) rootView.findViewById(R.id.edtKilometragem);;
         actNome = (AutoCompleteTextView) rootView.findViewById(R.id.actNome);;
         edtCpf = (EditText) rootView.findViewById(R.id.edtCpf);;
         edtTelefone = (EditText) rootView.findViewById(R.id.edtTelefone);
@@ -129,6 +134,32 @@ public class CadastroVeiculoFragment extends Fragment {
         isNewInsert = (idVeiculo == -1);
         newClient = (idVeiculo == -1);
 
+        ArrayAdapter<String> adapterMarca = new ArrayAdapter<>(getContext(),
+                android.R.layout.simple_list_item_1, getResources().getStringArray( R.array.array_marcas) );
+
+        /*ArrayAdapter<String> adapterModelo = new ArrayAdapter<>(getContext(),
+                android.R.layout.simple_list_item_1, getResources().getStringArray( R.array.array_chevrolet) );
+
+        actModelo.setAdapter(adapterModelo);*/
+
+        actModelo.setAdapter(new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1));
+
+        actMarca.setAdapter(adapterMarca);
+        actMarca.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+                ArrayAdapter<String> adapterModelo = new ArrayAdapter<>(getContext(),
+                        android.R.layout.simple_list_item_1, getResources().getStringArray( getIdArrayMarca((String) parent.getAdapter().getItem(position))));
+
+                actModelo.setAdapter(adapterModelo);
+                adapterModelo.notifyDataSetChanged();
+            }
+        });
+
+        actMarca.setThreshold(1);
+        actModelo.setThreshold(1);
+        actNome.setThreshold(1);
+
         return rootView;
     }
 
@@ -156,16 +187,20 @@ public class CadastroVeiculoFragment extends Fragment {
 
                 if (veiculo == null) {
 
-                    veiculo = new Veiculo(edtPlaca.getText().toString(),
-                            edtVeiculo.getText().toString(),
+                    veiculo = new Veiculo(actMarca.getText().toString(),
+                            actModelo.getText().toString(),
+                            edtPlaca.getText().toString(),
+                            Long.valueOf(edtKm.getText().toString()),
                             new Cliente(actNome.getText().toString(), edtCpf.getText().toString(),
                                     edtTelefone.getText().toString()),
                             ServicosFragment.getServicos());
 
                 } else {
 
+                    veiculo.setMarca(actMarca.getText().toString());
+                    veiculo.setModelo(actModelo.getText().toString());
                     veiculo.setPlaca(edtPlaca.getText().toString());
-                    veiculo.setDescrisao(edtVeiculo.getText().toString());
+                    veiculo.setKm(Long.valueOf(edtKm.getText().toString()));
 
                     if (newClient)
                         veiculo.setCliente(new Cliente(actNome.getText().toString(), edtCpf.getText().toString(), edtTelefone.getText().toString()));
@@ -185,13 +220,23 @@ public class CadastroVeiculoFragment extends Fragment {
     }
 
     private boolean validFields() {
+        if (actMarca.getText().toString().isEmpty()) {
+            actMarca.setError("Este campo não pode ficar vazio.");
+            return false;
+        }
+
+        if (actModelo.getText().toString().isEmpty()) {
+            actModelo.setError("Este campo não pode ficar vazio.");
+            return false;
+        }
+
         if (edtPlaca.getText().toString().length() < 8) {
             edtPlaca.setError("Placa inválida.");
             return false;
         }
 
-        if (edtVeiculo.getText().toString().isEmpty()) {
-            edtVeiculo.setError("O veículo deve ser preenchido.");
+        if (edtKm.getText().toString().isEmpty()) {
+            edtKm.setError("Preencha a quilometragem");
             return false;
         }
 
@@ -347,13 +392,39 @@ public class CadastroVeiculoFragment extends Fragment {
 
             } else {
 
+                actMarca.setText(veiculo.getMarca());
+                actModelo.setText(veiculo.getModelo());
                 edtPlaca.setText(veiculo.getPlaca());
-                edtVeiculo.setText(veiculo.getDescrisao());
+                edtKm.setText(String.valueOf(veiculo.getKm()));
                 actNome.setText(veiculo.getCliente().getNome());
                 edtCpf.setText(veiculo.getCliente().getCpf());
                 edtTelefone.setText(veiculo.getCliente().getTelefone());
 
             }
         }
+    }
+
+    private int getIdArrayMarca(String s) {
+        switch (s) {
+            case "Chery": return R.array.array_cherry;
+            case "GM/Chevrolet": return R.array.array_chevrolet;
+            case "Citroën": return R.array.array_citroen;
+            case "Fiat": return R.array.array_fiat;
+            case "Ford": return R.array.array_ford;
+            case "Honda": return R.array.array_honda;
+            case "Hyundai": return R.array.array_hyundai;
+            case "Jac Motors": return R.array.array_jac_motors;
+            case "Jeep": return R.array.array_jeep;
+            case "Kia": return R.array.array_kia;
+            case "Land Rover": return R.array.array_land_rover;
+            case "Mitsubishi": return R.array.array_mitsubishi;
+            case "Nissan": return R.array.array_nissan;
+            case "Peugeot": return R.array.array_peugeot;
+            case "Renault": return R.array.array_renault;
+            case "Ssangyong": return R.array.array_ssangyong;
+            case "Toyota": return R.array.array_toyota;
+            case "Volkswagen": return R.array.array_volkswagen;
+        }
+        return 0;
     }
 }

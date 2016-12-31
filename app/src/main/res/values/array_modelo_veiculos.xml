@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="array_cherry">
+        <item>celer</item>
+        <item>QQ</item>
+    </array>
+
+    <array name="array_chevrolet">
+        <item>Agile</item>
+        <item>Astra</item>
+        <item>Blazer</item>
+        <item>Captiva</item>
+        <item>Celta</item>
+        <item>Classic</item>
+        <item>Cobalt</item>
+        <item>Corsa</item>
+        <item>Cruze</item>
+        <item>Malibu</item>
+        <item>Meriva</item>
+        <item>Montana</item>
+        <item>Omega</item>
+        <item>Onix</item>
+        <item>Prisma</item>
+        <item>S10</item>
+        <item>Sonic</item>
+        <item>Trailblazer</item>
+        <item>Vectra</item>
+        <item>Zafira</item>
+    </array>
+
+    <array name="array_citroen">
+        <item>Aircross</item>
+        <item>C3</item>
+        <item>C4</item>
+        <item>C5</item>
+        <item>Jumper</item>
+        <item>Xsara Picasso</item>
+    </array>
+
+    <array name="array_fiat">
+        <item>500</item>
+        <item>Bravo</item>
+        <item>Doblò</item>
+        <item>Ducato</item>
+        <item>Fiat Mobi</item>
+        <item>Fiat Toro</item>
+        <item>Fiorino</item>
+        <item>Freemont</item>
+        <item>Grand Siena</item>
+        <item>Idea</item>
+        <item>Linea</item>
+        <item>Mille</item>
+        <item>Palio</item>
+        <item>Punto</item>
+        <item>Siena EL</item>
+        <item>Strada</item>
+        <item>Uno</item>
+    </array>
+
+    <array name="array_ford">
+        <item>Courier</item>
+        <item>EcoSport</item>
+        <item>Edge</item>
+        <item>F-250</item>
+        <item>Fiesta Rocam</item>
+        <item>Focus</item>
+        <item>Fusion</item>
+        <item>Ka</item>
+        <item>New Fiest</item>a
+        <item>Ranger</item>
+    </array>
+
+    <array name="array_honda">
+        <item>Accord</item>
+        <item>CR-V</item>
+        <item>City</item>
+        <item>Civic</item>
+        <item>Fit</item>
+        <item>HR-V</item>
+    </array>
+
+    <array name="array_hyundai">
+        <item>Azera</item>
+        <item>Elantra</item>
+        <item>Equus</item>
+        <item>HB20</item>
+        <item>HR</item>
+        <item>Santa Fe</item>
+        <item>Sonata</item>
+        <item>Tucson</item>
+        <item>Veloster</item>
+        <item>Veracruz</item>
+        <item>i30</item>
+        <item>iX35</item>
+    </array>
+
+    <array name="array_jac_motors">
+        <item>J2</item>
+        <item>J3</item>
+        <item>J5</item>
+        <item>J6</item>
+    </array>
+
+    <array name="array_jeep">
+        <item>Cherokee</item>
+        <item>Compass</item>
+        <item>Grand Cherokee</item>
+        <item>Jeep Renegade</item>
+        <item>Wrangler</item>
+    </array>
+
+    <array name="array_kia">
+        <item>Carnival</item>
+        <item>Cerato</item>
+        <item>Optima</item>
+        <item>Picanto</item>
+        <item>Sorento</item>
+        <item>Soul</item>
+        <item>Sportage</item>
+    </array>
+
+    <array name="array_land_rover">
+        <item>Defender</item>
+        <item>Discovery</item>
+        <item>Freelander</item>
+        <item>Range Rover</item>
+    </array>
+
+    <array name="array_mitsubishi">
+        <item>ASX</item>
+        <item>L200</item>
+        <item>Lancer</item>
+        <item>Outlander</item>
+        <item>Pajero</item>
+    </array>
+
+    <array name="array_nissan">
+        <item>Frontier</item>
+        <item>Grand Livina</item>
+        <item>Livina</item>
+        <item>March</item>
+        <item>Sentra</item>
+        <item>Tiida</item>
+        <item>Versa</item>
+    </array>
+
+    <array name="array_peugeot">
+        <item>2008</item>
+        <item>207</item>
+        <item>208</item>
+        <item>3008</item>
+        <item>307</item>
+        <item>308</item>
+        <item>408</item>
+    </array>
+
+    <array name="array_renault">
+        <item>Clio</item>
+        <item>Duster</item>
+        <item>Fluence</item>
+        <item>Kangoo Express</item>
+        <item>Logan</item>
+        <item>Sandero</item>
+        <item>Symbol</item>
+    </array>
+
+    <array name="array_ssangyong">
+        <item>Actyon Sports</item>
+        <item>Kyron</item>
+    </array>
+
+    <array name="array_toyota">
+        <item>Corolla</item>
+        <item>Etios</item>
+        <item>Hilux</item>
+        <item>Prius</item>
+        <item>RAV4</item>
+        <item>SW4</item>
+    </array>
+
+    <array name="array_volkswagen">
+        <item>Amarok</item>
+        <item>Crossfox</item>
+        <item>Fox</item>
+        <item>Fusca</item>
+        <item>Gol</item>
+        <item>Golf</item>
+        <item>Jetta</item>
+        <item>Kombi</item>
+        <item>Parati</item>
+        <item>Passat</item>
+        <item>Polo</item>
+        <item>Saveiro</item>
+        <item>Space Cross</item>
+        <item>SpaceFox</item>
+        <item>Tiguan</item>
+        <item>Up!</item>
+        <item>Voyage</item>
+    </array>
+
+</resources>
