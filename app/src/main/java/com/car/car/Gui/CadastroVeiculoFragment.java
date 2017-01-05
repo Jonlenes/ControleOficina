@@ -407,7 +407,7 @@ public class CadastroVeiculoFragment extends Fragment {
     private int getIdArrayMarca(String s) {
         switch (s) {
             case "Chery": return R.array.array_cherry;
-            case "GM/Chevrolet": return R.array.array_chevrolet;
+            case "Chevrolet": return R.array.array_chevrolet;
             case "Citroën": return R.array.array_citroen;
             case "Fiat": return R.array.array_fiat;
             case "Ford": return R.array.array_ford;
