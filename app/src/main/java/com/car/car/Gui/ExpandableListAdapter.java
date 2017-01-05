@@ -54,8 +54,9 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = infalInflater.inflate(R.layout.elv_times_item, null);
         }
 
-        ((TextView) convertView.findViewById(R.id.tvPlaca)).setText(child.getPlaca());
-        ((TextView) convertView.findViewById(R.id.tvDescrisao)).setText(child.getDescrisao());
+        ((TextView) convertView.findViewById(R.id.tvItemMarca)).setText(child.getMarca());
+        ((TextView) convertView.findViewById(R.id.tvItemModelo)).setText(child.getModelo());
+        ((TextView) convertView.findViewById(R.id.tvItemPlaca)).setText(child.getPlaca());
 
         return convertView;
     }
